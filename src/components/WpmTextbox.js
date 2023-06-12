@@ -1,19 +1,6 @@
-import React,{Component} from 'react';
+import React from 'react';
 import {useRef} from 'react';
 import {useState} from 'react';
-
-//export class WpmTextbox extends Component {
-//  constructor(props) {
-//    super(props);
-//    this.state = {
-//      textInput: "",
-//      startTime: 0,
-//      pauseTime: 0,
-//      isPaused: false,
-//      cpm: 0,
-//      wpm: 0,
-//    };
-//  }
 
 export default function WpmTextbox() {
   const ref = useRef(null);

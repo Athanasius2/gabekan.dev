@@ -1,13 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter,
+  RouterProvider,
+  Route,
+  Routes,
+  Link,
+} from "react-router-dom";
+
+import WpmTextbox from './components/WpmTextbox';
+import App from './App';
+import Login from './Login';
+import Projects from './Projects';
+import Contact from './Contact';
+import Links from './Links';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route path="wpm" element={<WpmTextbox />} />
+          <Route path="login" element={<Login />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="links" element={<Links />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -1,15 +1,22 @@
+import * as ReactDOM from "react-dom";
+import {
+  Outlet,
+  Link,
+} from "react-router-dom";
+
+
 import logo from './logo.svg';
 import './App.css';
-import WpmTextbox from './components/WpmTextbox.js'
 
-function App() {
+import NavBar from './components/NavBar';
+
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <WpmTextbox />
+        <NavBar />
+        <Outlet />
       </header>
     </div>
   );
 }
-
-export default App;
