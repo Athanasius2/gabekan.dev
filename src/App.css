@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: courier, monospace;
 }
 
 .App-logo {
@@ -14,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +36,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul.NavBar {
+  position: fixed;
+  top: 30px;
+  min-width: 80vw;
+  display: inline-block;
+  border: white;
+  border-style: double;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.NavBar li {
+  display: inline;
+}
+
+ul.NavBar li a {
+  padding-inline: 5vw;
+  color: white;
+}
+
+
+ul.NavBar li a:hover {
+  color: blue;
+}
+
+div .content {
+  position: relative;
+  min-width: 80vw;
+  border: white;
+  border-style: double;
 }

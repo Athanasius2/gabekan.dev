@@ -15,7 +15,9 @@ export default function App() {
     <div className="App">
       <header className="App-header">
         <NavBar />
-        <Outlet />
+        <div className="content">
+          <Outlet />
+        </div>
       </header>
     </div>
   );
