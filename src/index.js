@@ -16,6 +16,8 @@ import Login from './Login';
 import Projects from './Projects';
 import Contact from './Contact';
 import Links from './Links';
+import Home from './Home';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +30,7 @@ root.render(
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
           <Route path="links" element={<Links />} />
+          <Route path="home" element={<Home />} />
         </Route>
       </Routes>
     </BrowserRouter>
