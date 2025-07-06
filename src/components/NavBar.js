@@ -8,7 +8,7 @@ import {
 export default function NavBar() {
   return(
     <ul class="NavBar">
-      <li><Link to="/home">Home</Link></li>
+      <li><Link to="/">Home</Link></li>
       <li><Link to="/projects">Projects</Link></li>
       <li><Link to="/links">Links</Link></li>
       <li><Link to="/contact">Contact</Link></li>

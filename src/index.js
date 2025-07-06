@@ -25,12 +25,12 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
           <Route path="wpm" element={<WpmTextbox />} />
           <Route path="login" element={<Login />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
           <Route path="links" element={<Links />} />
-          <Route path="home" element={<Home />} />
         </Route>
       </Routes>
     </BrowserRouter>
