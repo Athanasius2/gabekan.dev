@@ -1,13 +1,10 @@
-import React from 'react';
-import {useState} from 'react';
 import {
-  Outlet,
   Link,
 } from "react-router-dom";
 
-export default function NavBar() {
+function NavBar() {
   return(
-    <ul class="NavBar">
+    <ul className="NavBar">
       <li><Link to="/">Home</Link></li>
       <li><Link to="/projects">Projects</Link></li>
       <li><Link to="/links">Links</Link></li>
@@ -16,5 +13,7 @@ export default function NavBar() {
     </ul>
   );
 }
+
+export default NavBar;
 
 
