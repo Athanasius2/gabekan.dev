@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "devDependencies": {
+  "dependencies": {
     "@aws-amplify/backend": "^1.16.1"
   }
 }
